@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 140px 0;
+  transition: 0.8s;
+}
+
+#app {
+  transition: 0.8s;
+}
+
+.sun-mode {
+  background-color: #42c2ff;
+}
+
+.moon-mode {
+  background-color: #712b75;
+}
+
+.rain-mode {
+  background-color: #a8aac4;
+}
+
+.snow-mode {
+  background-color: #6ba7cc;
+}
+
+.wrapper {
+  width: calc(100vw - 200px);
+  max-width: 992px;
+  min-height: 720px;
+  background: linear-gradient(252.44deg, rgba(239, 255, 253, 0.7) 0%, rgba(239, 255, 253, 0) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 85px;
+  margin: 0 auto;
+  transition: 0.8s;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 40px 40px;
+}
+
+/* search styles */
+.search {
+  display: flex;
+  max-width: 464px;
+  min-width: 230px;
+  height: 47px;
+  margin: 0 auto 90px;
+  padding: 0 26px;
+  background: linear-gradient(269.42deg, #f2fbff -1.71%, rgba(242, 251, 255, 0.3) 100%);
+  opacity: 0.5;
+  border-radius: 18px;
+}
+
+.search__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search__field {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.big-picture {
+  position: absolute;
+  z-index: -100;
+  top: 40px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  transition: 0.8s;
+}
+
+.sun {
+  background: url('../img/big-pictures/sun.png') no-repeat;
+  background-size: cover;
+}
+
+.moon {
+  background: url('../img/big-pictures/moon.png') no-repeat;
+  background-size: cover;
+}
+
+.rain {
+  background: url('../img/big-pictures/rain.png') no-repeat;
+  background-size: cover;
+}
+
+.snow {
+  background: url('../img/big-pictures/snow.png') no-repeat;
+  background-size: cover;
+}
+
+/* card styles */
+.card {
+  max-width: 400px;
+  /* min-width: 320px; */
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  transition: 0.8s;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.card__location,
+.card__temperature,
+.card__weather,
+.card__humidity,
+.card__wind-speed {
+  color: rgba(242, 251, 255, 0.7);
+  font-size: 46px;
+  margin-bottom: 11px;
+}
+
+.card__weather {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.card__weather-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.sun-icon {
+  background: url('../img/icons/sun-icon.png') no-repeat;
+  background-size: cover;
+}
+
+.moon-icon {
+  background: url('../img/icons/moon-icon.png') no-repeat;
+  background-size: cover;
+}
+
+.rain-icon {
+  background: url('../img/icons/rain-icon.png') no-repeat;
+  background-size: cover;
+}
+
+.snow-icon {
+  background: url('../img/icons/snow-icon.png') no-repeat;
+  background-size: cover;
+}
+
+.card__humidity,
+.card__wind-speed {
+  font-size: 34px;
+}
